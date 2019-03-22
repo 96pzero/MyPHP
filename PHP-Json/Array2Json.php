@@ -7,7 +7,7 @@
   );
   // 将数组转换为json格式
   var_dump(json_encode($arr)) ;
-  var_dump(json_encode($arr, JSON_UNESCAPED_UNICODE));// 直接转成json数组，中文不转码
+  var_dump(json_encode($arr, JSON_UNESCAPED_UNICODE));// 直接转成json数组，中文不转义
   var_dump(_t(json_encode($arr, JSON_UNESCAPED_UNICODE),48,' '));
 
   // 定义一个转码的方法
